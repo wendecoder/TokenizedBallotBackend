@@ -7,8 +7,8 @@ async function bootstrap() {
   app.enableCors({
     origin: "https://tokenized-ballot-dapp-repo.vercel.app/", // or true to allow any origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
+    allowedHeaders: ['Content-Type'],
+    credentials: false,
   }
   );
 
